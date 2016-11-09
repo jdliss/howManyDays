@@ -1,11 +1,15 @@
 <head>
+  <title>How Many Days Until</title>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
   <div id="prompt">
-    <p>{{ message + prompt }}</p>
-    <input v-model="prompt">
+    <p>{{ message + date + '?' }}</p>
+    <input v-model="date">
+  </div>
+  <div id="days-left">
+    <p>{{ message }}</p>
   </div>
   <script type="text/javascript" src="app.js"></script>
 </body>
